@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirlocUnlock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-blue-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AirlocUnlock</h1>
+      <nav class="space-x-4">
+        <button onclick="showSection('project')" class="hover:underline">Projet</button>
+        <button onclick="showSection('team')" class="hover:underline">Équipe</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Projet (visible par défaut) -->
+  <section id="project" class="py-16 bg-blue-50">
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4 text-blue-700">Bienvenue sur AirlocUnlock</h2>
+      <p class="text-lg mb-8">
+        AirlocUnlock est une plateforme qui facilite la mise en relation entre les propriétaires de biens
+        et les locataires potentiels grâce à un système sécurisé de réservation et de gestion d’accès.
+      </p>
+      <a href="https://github.com/votre-repo" class="text-blue-600 hover:underline text-lg">Voir le projet sur GitHub</a>
+    </div>
+
+    <!-- Présentation visuelle -->
+    <section class="py-20 bg-white" id="presentation">
+      <h3 class="text-3xl font-semibold text-center mb-12">Présentation Visuelle</h3>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-4">
+
+        <!-- Télévision cliquable -->
+        <div class="text-center">
+          <a href="https://airlocunlock.com" target="_blank" class="inline-block">
+            <img src="img/television-icon.png" alt="Site Web AirlocUnlock"
+                 class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+            <p class="mt-4 text-lg text-blue-800 font-semibold">Voir le site web AirlocUnlock</p>
+          </a>
+        </div>
+
+        <!-- Smartphone avec vidéo -->
+        <div class="text-center">
+          <div class="rounded-xl overflow-hidden shadow-lg border w-[200px] mx-auto">
+            <video autoplay muted loop class="w-full">
+              <source src="img/figma-app.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+          </div>
+          <p class="mt-4 text-base text-blue-800">Téléchargez notre application mobile Android.</p>
+        </div>
+      </div>
+
+      <!-- QR Code -->
+      <div class="text-center mt-12">
+        <img src="img/qrcode-test.png" alt="QR Code Téléchargement App" class="mx-auto">
+        <p class="text-sm text-gray-600 mt-2">Scannez pour télécharger l’application</p>
+      </div>
+
+      <!-- Explication liaison Wi-Fi -->
+      <div class="mt-16 text-center max-w-3xl mx-auto px-4">
+        <p class="text-lg">
+          Grâce à notre système connecté via <strong>Wi-Fi sécurisé</strong>, l’utilisateur peut <strong>ouvrir la serrure électronique</strong>
+          d’un bien loué directement depuis l'application. Chaque accès est <strong>temporaire, unique et contrôlé</strong>, garantissant sécurité
+          et flexibilité pour les propriétaires comme pour les locataires.
+        </p>
+      </div>
+    </section>
+  </section>
+
+  <!-- Section Équipe (masquée par défaut) -->
+  <section id="team" class="py-16 max-w-6xl mx-auto hidden">
+    <h3 class="text-3xl font-semibold text-center mb-10">Notre Équipe</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="https://via.placeholder.com/100" alt="Nom" class="mx-auto rounded-full mb-4">
+        <h4 class="text-xl font-bold">Bilal TAOUFIK</h4>
+        <p class="text-sm text-gray-600">Application Android</p>
+        <div class="mt-4 flex justify-center gap-4 text-blue-600">
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="https://via.placeholder.com/100" alt="Nom" class="mx-auto rounded-full mb-4">
+        <h4 class="text-xl font-bold">Lakshan SANGARALINGAM</h4>
+        <p class="text-sm text-gray-600">Site Web</p>
+        <div class="mt-4 flex justify-center gap-4 text-blue-600">
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="/public/img/logo.png" alt="Nom" class="mx-auto rounded-full mb-4">
+        <h4 class="text-xl font-bold">Amine EL MIR</h4>
+        <p class="text-sm text-gray-600">API</p>
+        <div class="mt-4 flex justify-center gap-4 text-blue-600">
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="https://via.placeholder.com/100" alt="Nom" class="mx-auto rounded-full mb-4">
+        <h4 class="text-xl font-bold">Adel AICHI</h4>
+        <p class="text-sm text-gray-600">oT</p>
+        <div class="mt-4 flex justify-center gap-4 text-blue-600">
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <!-- 3 autres membres à dupliquer -->
+    </div>
+  </section>
+
+  <!-- Section Contact (masquée par défaut) -->
+  <section id="contact" class="bg-blue-600 text-white py-16">
+    <div class="max-w-5xl mx-auto text-center">
+      <p class="mt-4 text-sm">&copy; 2025 AirlocUnlock. Tous droits réservés.</p>
+    </div>
+  </section>
+
+  <!-- JS pour la navigation -->
+  <script>
+    function showSection(id) {
+      const sections = ['project', 'team'];
+      sections.forEach(section => {
+        document.getElementById(section).classList.add('hidden');
+      });
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
