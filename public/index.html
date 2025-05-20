@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet AirlockUnluck | Site de Présentation</title>
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,10 +17,10 @@
                 <button id="menu-toggle" class="menu-toggle">☰</button>
                 <nav id="menu" class="menu">
                     <ul>
-                        <li><a href="#accueil">Home</a></li>
+                        <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#projet">Projet</a></li>
-                        <li><a href="#github">Projects</a></li>
-                        <li><a href="#linkedin">Contact</a></li>
+                        <li><a href="#tools">Outils</a></li>
+                        <li><a href="#etudiant">Étudiants</a></li>
                     </ul>
                 </nav>
             </div>
@@ -45,149 +45,124 @@
             <h1>Présentation du Projet</h1>
 
             <div class="profile-header">
-                <img src="./img/logo.png" alt="Logo du projet AirlockUnluck">
+                <img src="./src/logo.png" alt="Logo du projet AirlockUnluck">
             </div>
 
             <div class="profile-info">
-                <p><strong>Nom :</strong> <span>AirlockUnluck</span></p>
-                <p><strong>Durée :</strong> <span>4 mois</span></p>
-                <p><strong>École :</strong> <span>Lycée Jean Rostand, Villepinte</span></p>
-            </div>
+            <div class="info-item"><strong>Nom :</strong> <span>AirlockUnluck</span></div>
+            <div class="info-item"><strong>Durée :</strong> <span>6 mois</span></div>
+            <div class="info-item"><strong>École :</strong> <span>Lycée Jean Rostand, Villepinte</span></div>
+        </div>
 
-            <div class="project-links">
-                <a href="https://lien-vers-le-site.com" target="_blank" class="btn btn-primary">Voir le site</a>
-                <a href="https://lien-trello.com" target="_blank" class="btn btn-secondary">Trello</a>
-            </div>
+        <div class="project-video">
+            <video controls>
+                <source src="./src/demo_app.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéo.
+            </video>
+        </div>
 
-            <div class="project-content">
-                <div class="project-video">
-                    <video width="560" height="315" controls>
-                        <source src="./externe/demo_app.mp4" type="video/mp4">
-                        Votre navigateur ne supporte pas la lecture de vidéo.
-                    </video>
-                </div>
-
-                <div class="download-btn-container">
-                    <a href="./externe/demo_app.mp4" download class="btn btn-download">Télécharger l'Application Android</a>
-                </div>
-            </div>
+        <div class="project-links">
+            <a href="https://trello.com/invite/b/6764223f060c42d739279082/ATTIad74d1d7d86c26182f03c87abcd214b3B74394FE/projet-airlockunlock" target="_blank" class="btn btn-secondary">📋 Trello</a>
+            <a href="https://lien-vers-le-site.com" target="_blank" class="btn btn-primary">🌐 Voir le site</a>
+            <a href="./src/demo_app.mp4" download class="btn btn-download">⬇️ Télécharger APK</a>
+            <a href="./src/Rapport Projet - AirlockUnlock.pdf" target="_blank" class="btn btn-report">📄 Rapport de Projet</a>
+        </div>
         </section>
 
         <section id="tools">
-            <h2>Outils Utilisés</h2>
+            <h2>Outils - Languages</h2>
             <div class="tools-slider">
                 <div class="tools-track">
-                    <img src="./img/docker.png" alt="Outil 1" class="tool-logo">
-                    <img src="./img/github.png" alt="Outil 2" class="tool-logo">
-                    <img src="./img/wireshark.png" alt="Outil 3" class="tool-logo">
-                    <img src="./img/trello.png" alt="Outil 4" class="tool-logo">
-                    <img src="./img/sql.png" alt="Outil 5" class="tool-logo">
-                    <img src="./img/java.svg" alt="Outil 5" class="tool-logo">
-                    <img src="./img/htlm.png" alt="Outil 5" class="tool-logo">
-                    <img src="./img/css.png" alt="Outil 5" class="tool-logo">
+                    <img src="./src/docker.png" alt="Outil 1" class="tool-logo">
+                    <img src="./src/github.png" alt="Outil 2" class="tool-logo">
+                    <img src="./src/wireshark.png" alt="Outil 3" class="tool-logo">
+                    <img src="./src/trello.png" alt="Outil 4" class="tool-logo">
+                    <img src="./src/sql.png" alt="Outil 6" class="tool-logo">
+                    <img src="./src/java.svg" alt="Outil 7" class="tool-logo">
+                    <img src="./src/htlm.png" alt="Outil 8" class="tool-logo">
+                    <img src="./src/css.png" alt="Outil 9" class="tool-logo">
+                    <img src="./src/Android_Studio.png" alt="Outil 10" class="tool-logo">
+                    <img src="./src/vmware.svg" alt="Outil 11" class="tool-logo">
+                    <img src="./src/Arduino.png" alt="Outil 12" class="tool-logo">
+                    <img src="./src/PHP.png" alt="Outil 13" class="tool-logo">
+                    <img src="./src/Postman.png" alt="Outil 14" class="tool-logo">
+                    <img src="./src/figma.webp" alt="Outil 15" class="tool-logo">
+
                     <!-- Reprise des logos pour boucle fluide -->
-                    <img src="./img/docker.png" alt="Outil 1" class="tool-logo">
-                    <img src="./img/github.png" alt="Outil 2" class="tool-logo">
-                    <img src="./img/wireshark.png" alt="Outil 3" class="tool-logo">
-                    <img src="./img/trello.png" alt="Outil 4" class="tool-logo">
-                    <img src="./img/sql.png" alt="Outil 5" class="tool-logo">
-                    <img src="./img/java.svg" alt="Outil 5" class="tool-logo">
-                    <img src="./img/htlm.png" alt="Outil 5" class="tool-logo">
-                    <img src="./img/css.png" alt="Outil 5" class="tool-logo">
+                    <img src="./src/docker.png" alt="Outil 1" class="tool-logo">
+                    <img src="./src/github.png" alt="Outil 2" class="tool-logo">
+                    <img src="./src/wireshark.png" alt="Outil 3" class="tool-logo">
+                    <img src="./src/trello.png" alt="Outil 4" class="tool-logo">
+                    <img src="./src/sql.png" alt="Outil 6" class="tool-logo">
+                    <img src="./src/java.svg" alt="Outil 7" class="tool-logo">
+                    <img src="./src/htlm.png" alt="Outil 8" class="tool-logo">
+                    <img src="./src/css.png" alt="Outil 9" class="tool-logo">
+                    <img src="./src/Android_Studio.png" alt="Outil 10" class="tool-logo">
+                    <img src="./src/vmware.svg" alt="Outil 11" class="tool-logo">
+                    <img src="./src/Arduino.png" alt="Outil 12" class="tool-logo">
+                    <img src="./src/PHP.png" alt="Outil 13" class="tool-logo">
+                    <img src="./src/Postman.png" alt="Outil 14" class="tool-logo">
+                    <img src="./src/figma.webp" alt="Outil 15" class="tool-logo">
                 </div>
             </div>
         </section>
                 
 
-        <section id="github">
-            <h1>PORTFOLIO</h1>
-            <div class="projects-container">
-                <div class="project disabled">
-                    <i>2025</i>
-                    <h2>AirlocUnluck</h2>
-                    <h3>Collaborative School Project</h3>
-                    <img src="./img/logo-airlocunluck.png" alt="Nouveau Projet">
-                    <p>Web site + App Mobile + Bluetooth</p>
-                    <span class="unavailable">COMING SOON</span>
+        <section id="etudiant">
+            <h1>Github - LinkedIn</h1>
+            <div class="team-section">
+                <div class="team-member">
+                    <div class="social-links">
+                        <a href="https://github.com/bilalTaoufik0" target="_blank" title="Voir le GitHub de Bilal TAOUFIK">
+                            <img src="./src/github.png" alt="GitHub de Bilal TAOUFIK">
+                        </a>
+                        <a href="https://www.linkedin.com/in/bilal-t-642597275/" target="_blank" title="Voir le LinkedIn de Bilal TAOUFIK">
+                            <img src="./src/linkedin.webp" alt="LinkedIn de Bilal TAOUFIK" class="linkedin-logo">
+                        </a>
+                    </div>
+                    <p>Bilal TAOUFIK</p>
                 </div>
-                <div class="project">
-                    <i>2024</i>
-                    <h2>UVITEC</h2>
-                    <h3>Professional Project</h3>
-                    <img src="./img/logo-uvitec.png" alt="Projet UVITEC">
-                    <p>3D visualization + Animation</p>
-                    <button class="view-button" data-project="Projet 1">VIEW</button>
+                <div class="team-member">
+                    <div class="social-links">
+                        <a href="https://github.com/AdelAichi" target="_blank" title="Voir le GitHub de Adel AICHI">
+                            <img src="./src/github.png" alt="GitHub de Adel AICHI">
+                        </a>
+                        <a href="https://www.linkedin.com/in/adel-aichi-91b7002a3/" target="_blank" title="Voir le LinkedIn de Adel AICHI">
+                            <img src="./src/linkedin.webp" alt="LinkedIn de Adel AICHI" class="linkedin-logo">
+                        </a>
+                    </div>
+                    <p>Adel AICHI</p>
                 </div>
-                <div class="project disabled">
-                    <i>2024</i>
-                    <h2>VILBER</h2>
-                    <h3>Professional Project</h3>
-                    <img src="./img/logo-vilber.png" alt="Projet VILBER">
-                    <p>3D visualization + Animation</p>
-                    <span class="unavailable">UNAVAILABLE</span>
+                <div class="team-member">
+                    <div class="social-links">
+                        <a href="https://github.com/ElmirAmine" target="_blank" title="Voir le GitHub de Amine El Mir">
+                            <img src="./src/github.png" alt="GitHub de Amine El Mir">
+                        </a>
+                        <a href="https://www.linkedin.com/in/amineelmir/" target="_blank" title="Voir le LinkedIn de Amine El Mir">
+                            <img src="./src/linkedin.webp" alt="LinkedIn de Amine El Mir" class="linkedin-logo">
+                        </a>
+                    </div>
+                    <p>Amine El Mir</p>
                 </div>
-                <div class="project">
-                    <i>2024</i>
-                    <h2>CRYPTO-SHIELD</h2>
-                    <h3>Collaborative School Project</h3>
-                    <img src="./img/icon-logiciel.png" alt="Projet CRYPTO-SHIELD">
-                    <p>File encryption/decryption software</p>
-                    <button class="download-button" data-project="Projet 3">DOWNLOAD</button>
+                <div class="team-member">
+                    <div class="social-links">
+                        <a href="https://github.com/sangaralingamLakshan" target="_blank" title="Voir le GitHub de Lakshan SANGARALINGAM">
+                            <img src="./src/github.png" alt="GitHub de Lakshan SANGARALINGAM">
+                        </a>
+                        <a href="https://www.linkedin.com/in/lakshan-sangaralingam-3549bb253/" target="_blank" title="Voir le LinkedIn de Lakshan SANGARALINGAM">
+                            <img src="./src/linkedin.webp" alt="LinkedIn de Lakshan SANGARALINGAM" class="linkedin-logo">
+                        </a>
+                    </div>
+                    <p>Lakshan SANGARALINGAM</p>
                 </div>
             </div>
-        </section>
-        
-
-        <section id="linkedin">
-            <h1>CONTACT ME</h1>
-            <form id="contact-form">
-                <label for="name">Name :</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-mail :</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="10" required></textarea>
-
-                <button type="submit">SUBMIT</button>
-            </form>
-
-            <div class="social-buttons">
-                <a href="https://www.linkedin.com/in/bilal-t-642597275/" class="social-button" target="_blank" title="LinkedIn">
-                    <img src="./img/icon-linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://github.com/bilalTaoufik0" class="social-button" target="_blank" title="GitHub">
-                    <img src="./img/github-icon-2.png" alt="GitHub">
-                </a>
-                <a href="mailto:bll.taoufik@gmail.com" class="social-button" title="Mail">
-                    <img src="./img/icon-mail.png" alt="Mail">
-                </a>
-            </div>
-
             <footer>
-                <p>© Bilal TAOUFIK | <a href="#">Terms of use</a> | <a href="#">Privacy Policy</a></p>
+                <p>© AirlockUnluck | Terms of use | Privacy Policy</p>
             </footer>
         </section>
+
+        
     </div>
-
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer@3.0.1/dist/model-viewer.min.js"></script>
-    <script>
-        emailjs.init("KSloQ27lejVrtcrQF");
-
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            emailjs.sendForm('service_32dvr9u', 'template_oxt08wt', this)
-                .then(function(response) {
-                    alert('Message envoyé avec succès!');
-                }, function(error) {
-                    alert('Erreur lors de l\'envoi du message');
-                    console.error('Erreur:', error);
-                });
-        });
-    </script>
 
     <script src="script.js"></script>
 </body>
