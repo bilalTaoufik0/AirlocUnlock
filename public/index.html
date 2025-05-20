@@ -1,139 +1,195 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AirlocUnlock</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet AirlockUnluck | Site de Présentation</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-white text-blue-900 font-sans">
 
-  <!-- Header -->
-  <header class="bg-blue-600 text-white p-4 shadow-md">
-    <div class="max-w-5xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">AirlocUnlock</h1>
-      <nav class="space-x-4">
-        <button onclick="showSection('project')" class="hover:underline">Projet</button>
-        <button onclick="showSection('team')" class="hover:underline">Équipe</button>
-      </nav>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu-container">
+                <button id="menu-toggle" class="menu-toggle">☰</button>
+                <nav id="menu" class="menu">
+                    <ul>
+                        <li><a href="#accueil">Home</a></li>
+                        <li><a href="#projet">Projet</a></li>
+                        <li><a href="#github">Projects</a></li>
+                        <li><a href="#linkedin">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="accueil">
+            <div class="text-container">
+                <h3>Bienvenue !</h3>
+                <h1>AirlockUnluck</h1>
+                <p>Ce projet, réalisé en groupe de 4 étudiants, s'inscrit dans le cadre de notre BTS CIEL.<br>
+                    Sur 4 mois, il nous a permis de mobiliser l'ensemble des compétences acquises durant ces deux années.
+                    C'est un projet final mêlant développement, réseau, cybersécurité et travail en équipe.
+                    Il représente l'aboutissement de notre formation.
+                    <br> Nous remercions M. Bennour, M. Lavarenne, M. Tobji et M. Madani pour leur accompagnement.
+                </p>
+            </div>
+            <img id="accueil-img" src="" alt="">
+        </section>
+
+
+        <section id="projet">
+            <h1>Présentation du Projet</h1>
+
+            <div class="profile-header">
+                <img src="./img/logo.png" alt="Logo du projet AirlockUnluck">
+            </div>
+
+            <div class="profile-info">
+                <p><strong>Nom :</strong> <span>AirlockUnluck</span></p>
+                <p><strong>Durée :</strong> <span>4 mois</span></p>
+                <p><strong>École :</strong> <span>Lycée Jean Rostand, Villepinte</span></p>
+            </div>
+
+            <div class="project-links">
+                <a href="https://lien-vers-le-site.com" target="_blank" class="btn btn-primary">Voir le site</a>
+                <a href="https://lien-trello.com" target="_blank" class="btn btn-secondary">Trello</a>
+            </div>
+
+            <div class="project-content">
+                <div class="project-video">
+                    <video width="560" height="315" controls>
+                        <source src="./externe/demo_app.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéo.
+                    </video>
+                </div>
+
+                <div class="download-btn-container">
+                    <a href="./externe/demo_app.mp4" download class="btn btn-download">Télécharger l'Application Android</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools">
+            <h2>Outils Utilisés</h2>
+            <div class="tools-slider">
+                <div class="tools-track">
+                    <img src="./img/docker.png" alt="Outil 1" class="tool-logo">
+                    <img src="./img/github.png" alt="Outil 2" class="tool-logo">
+                    <img src="./img/wireshark.png" alt="Outil 3" class="tool-logo">
+                    <img src="./img/trello.png" alt="Outil 4" class="tool-logo">
+                    <img src="./img/sql.png" alt="Outil 5" class="tool-logo">
+                    <img src="./img/java.svg" alt="Outil 5" class="tool-logo">
+                    <img src="./img/htlm.png" alt="Outil 5" class="tool-logo">
+                    <img src="./img/css.png" alt="Outil 5" class="tool-logo">
+                    <!-- Reprise des logos pour boucle fluide -->
+                    <img src="./img/docker.png" alt="Outil 1" class="tool-logo">
+                    <img src="./img/github.png" alt="Outil 2" class="tool-logo">
+                    <img src="./img/wireshark.png" alt="Outil 3" class="tool-logo">
+                    <img src="./img/trello.png" alt="Outil 4" class="tool-logo">
+                    <img src="./img/sql.png" alt="Outil 5" class="tool-logo">
+                    <img src="./img/java.svg" alt="Outil 5" class="tool-logo">
+                    <img src="./img/htlm.png" alt="Outil 5" class="tool-logo">
+                    <img src="./img/css.png" alt="Outil 5" class="tool-logo">
+                </div>
+            </div>
+        </section>
+                
+
+        <section id="github">
+            <h1>PORTFOLIO</h1>
+            <div class="projects-container">
+                <div class="project disabled">
+                    <i>2025</i>
+                    <h2>AirlocUnluck</h2>
+                    <h3>Collaborative School Project</h3>
+                    <img src="./img/logo-airlocunluck.png" alt="Nouveau Projet">
+                    <p>Web site + App Mobile + Bluetooth</p>
+                    <span class="unavailable">COMING SOON</span>
+                </div>
+                <div class="project">
+                    <i>2024</i>
+                    <h2>UVITEC</h2>
+                    <h3>Professional Project</h3>
+                    <img src="./img/logo-uvitec.png" alt="Projet UVITEC">
+                    <p>3D visualization + Animation</p>
+                    <button class="view-button" data-project="Projet 1">VIEW</button>
+                </div>
+                <div class="project disabled">
+                    <i>2024</i>
+                    <h2>VILBER</h2>
+                    <h3>Professional Project</h3>
+                    <img src="./img/logo-vilber.png" alt="Projet VILBER">
+                    <p>3D visualization + Animation</p>
+                    <span class="unavailable">UNAVAILABLE</span>
+                </div>
+                <div class="project">
+                    <i>2024</i>
+                    <h2>CRYPTO-SHIELD</h2>
+                    <h3>Collaborative School Project</h3>
+                    <img src="./img/icon-logiciel.png" alt="Projet CRYPTO-SHIELD">
+                    <p>File encryption/decryption software</p>
+                    <button class="download-button" data-project="Projet 3">DOWNLOAD</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="linkedin">
+            <h1>CONTACT ME</h1>
+            <form id="contact-form">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/bilal-t-642597275/" class="social-button" target="_blank" title="LinkedIn">
+                    <img src="./img/icon-linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/bilalTaoufik0" class="social-button" target="_blank" title="GitHub">
+                    <img src="./img/github-icon-2.png" alt="GitHub">
+                </a>
+                <a href="mailto:bll.taoufik@gmail.com" class="social-button" title="Mail">
+                    <img src="./img/icon-mail.png" alt="Mail">
+                </a>
+            </div>
+
+            <footer>
+                <p>© Bilal TAOUFIK | <a href="#">Terms of use</a> | <a href="#">Privacy Policy</a></p>
+            </footer>
+        </section>
     </div>
-  </header>
 
-  <!-- Section Projet (visible par défaut) -->
-  <section id="project" class="py-16 bg-blue-50">
-    <div class="text-center max-w-3xl mx-auto">
-      <h2 class="text-4xl font-bold mb-4 text-blue-700">Bienvenue sur AirlocUnlock</h2>
-      <p class="text-lg mb-8">
-        AirlocUnlock est une plateforme qui facilite la mise en relation entre les propriétaires de biens
-        et les locataires potentiels grâce à un système sécurisé de réservation et de gestion d’accès.
-      </p>
-      <a href="https://github.com/votre-repo" class="text-blue-600 hover:underline text-lg">Voir le projet sur GitHub</a>
-    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.0.1/dist/model-viewer.min.js"></script>
+    <script>
+        emailjs.init("KSloQ27lejVrtcrQF");
 
-    <!-- Présentation visuelle -->
-    <section class="py-20 bg-white" id="presentation">
-      <h3 class="text-3xl font-semibold text-center mb-12">Présentation Visuelle</h3>
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-4">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-        <!-- Télévision cliquable -->
-        <div class="text-center">
-          <a href="https://airlocunlock.com" target="_blank" class="inline-block">
-            <img src="img/television-icon.png" alt="Site Web AirlocUnlock"
-                 class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-            <p class="mt-4 text-lg text-blue-800 font-semibold">Voir le site web AirlocUnlock</p>
-          </a>
-        </div>
+            emailjs.sendForm('service_32dvr9u', 'template_oxt08wt', this)
+                .then(function(response) {
+                    alert('Message envoyé avec succès!');
+                }, function(error) {
+                    alert('Erreur lors de l\'envoi du message');
+                    console.error('Erreur:', error);
+                });
+        });
+    </script>
 
-        <!-- Smartphone avec vidéo -->
-        <div class="text-center">
-          <div class="rounded-xl overflow-hidden shadow-lg border w-[200px] mx-auto">
-            <video autoplay muted loop class="w-full">
-              <source src="img/figma-app.mp4" type="video/mp4" />
-              Votre navigateur ne supporte pas la vidéo.
-            </video>
-          </div>
-          <p class="mt-4 text-base text-blue-800">Téléchargez notre application mobile Android.</p>
-        </div>
-      </div>
-
-      <!-- QR Code -->
-      <div class="text-center mt-12">
-        <img src="img/qrcode-test.png" alt="QR Code Téléchargement App" class="mx-auto">
-        <p class="text-sm text-gray-600 mt-2">Scannez pour télécharger l’application</p>
-      </div>
-
-      <!-- Explication liaison Wi-Fi -->
-      <div class="mt-16 text-center max-w-3xl mx-auto px-4">
-        <p class="text-lg">
-          Grâce à notre système connecté via <strong>Wi-Fi sécurisé</strong>, l’utilisateur peut <strong>ouvrir la serrure électronique</strong>
-          d’un bien loué directement depuis l'application. Chaque accès est <strong>temporaire, unique et contrôlé</strong>, garantissant sécurité
-          et flexibilité pour les propriétaires comme pour les locataires.
-        </p>
-      </div>
-    </section>
-  </section>
-
-  <!-- Section Équipe (masquée par défaut) -->
-  <section id="team" class="py-16 max-w-6xl mx-auto hidden">
-    <h3 class="text-3xl font-semibold text-center mb-10">Notre Équipe</h3>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://via.placeholder.com/100" alt="Nom" class="mx-auto rounded-full mb-4">
-        <h4 class="text-xl font-bold">Bilal TAOUFIK</h4>
-        <p class="text-sm text-gray-600">Application Android</p>
-        <div class="mt-4 flex justify-center gap-4 text-blue-600">
-          <a href="#" target="_blank">LinkedIn</a>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://via.placeholder.com/100" alt="Nom" class="mx-auto rounded-full mb-4">
-        <h4 class="text-xl font-bold">Lakshan SANGARALINGAM</h4>
-        <p class="text-sm text-gray-600">Site Web</p>
-        <div class="mt-4 flex justify-center gap-4 text-blue-600">
-          <a href="#" target="_blank">LinkedIn</a>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="/public/img/logo.png" alt="Nom" class="mx-auto rounded-full mb-4">
-        <h4 class="text-xl font-bold">Amine EL MIR</h4>
-        <p class="text-sm text-gray-600">API</p>
-        <div class="mt-4 flex justify-center gap-4 text-blue-600">
-          <a href="#" target="_blank">LinkedIn</a>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow">
-        <img src="https://via.placeholder.com/100" alt="Nom" class="mx-auto rounded-full mb-4">
-        <h4 class="text-xl font-bold">Adel AICHI</h4>
-        <p class="text-sm text-gray-600">oT</p>
-        <div class="mt-4 flex justify-center gap-4 text-blue-600">
-          <a href="#" target="_blank">LinkedIn</a>
-          <a href="#" target="_blank">GitHub</a>
-        </div>
-      </div>
-      <!-- 3 autres membres à dupliquer -->
-    </div>
-  </section>
-
-  <!-- Section Contact (masquée par défaut) -->
-  <section id="contact" class="bg-blue-600 text-white py-16">
-    <div class="max-w-5xl mx-auto text-center">
-      <p class="mt-4 text-sm">&copy; 2025 AirlocUnlock. Tous droits réservés.</p>
-    </div>
-  </section>
-
-  <!-- JS pour la navigation -->
-  <script>
-    function showSection(id) {
-      const sections = ['project', 'team'];
-      sections.forEach(section => {
-        document.getElementById(section).classList.add('hidden');
-      });
-      document.getElementById(id).classList.remove('hidden');
-    }
-  </script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
